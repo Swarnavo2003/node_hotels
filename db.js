@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 // Define the MongoDb connection URL
-const mongoURL =
-  "mongodb+srv://swarnavo2020:0lzsbFvKTOjT5Kqm@cluster0.s0koyvj.mongodb.net/hotels";
+const mongoURL = process.env.MONGODB_URL;
 
 mongoose.connect(mongoURL, {
   useNewUrlParser: true,
