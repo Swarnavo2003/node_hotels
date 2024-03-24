@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 
 // Define the MongoDb connection URL
-const mongoURL =
-  "mongodb+srv://swarnavo2020:0lzsbFvKTOjT5Kqm@cluster0.s0koyvj.mongodb.net/hotels";
+const mongoURL = "YOUR_DB_CONNECTION_STRING";
 
 mongoose.connect(mongoURL, {
   useNewUrlParser: true,
